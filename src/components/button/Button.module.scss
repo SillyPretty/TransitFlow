@@ -1,0 +1,43 @@
+.button {
+  max-width: 194px;
+  text-wrap: nowrap;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Krub', sans-serif;
+  padding: 19px 50px;
+  font-weight: 600;
+  z-index: 1;
+  &::before {
+    content: '';
+    transition: all 600ms ease-in-out;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    position: absolute;
+    right: -20px;
+    bottom: -30px;
+    z-index: -1;
+  }
+  &:hover {
+    &::before {
+      width: 206px;
+      height: 206px;
+      right: -120px;
+      bottom: -100px;
+    }
+  }
+  &__dark {
+    color: #fff;
+    background-color: var(--main-background);
+    &::before {
+      background-color: #1f2a69;
+    }
+  }
+  &__light {
+    color: #23212a;
+    background: var(--main-gradient);
+    &::before {
+      background-color: #fff;
+    }
+  }
+}

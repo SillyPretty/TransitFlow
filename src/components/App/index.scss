@@ -1,0 +1,19 @@
+:root {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  --main-background: #091242;
+  --line-color: #4e5683;
+  --main-gradient: linear-gradient(to right, #ffb629, #ffda56, #ffd7a6);
+  --first-font: 'Rubik', sans-serif;
+  --second-font: 'Krub', sans-serif;
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-background) transparent;
+}
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}

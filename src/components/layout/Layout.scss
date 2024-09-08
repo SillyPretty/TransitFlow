@@ -1,0 +1,13 @@
+.body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header{
+  z-index: 999;
+}
+.main {
+  margin-top: -81px;
+  // z-index: -1;
+}
