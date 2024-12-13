@@ -1,0 +1,369 @@
+// ----main-----
+
+.main {
+  width: 100%;
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 507px;
+  z-index: 10;
+}
+.dop_styles {
+  color: #fff !important;
+}
+.span_dop {
+  color: #1c1f35;
+  background-color: rgba($color: #e8e8e8, $alpha: 0.5);
+}
+
+// ----WhatWe-----
+
+.WhatWe {
+  padding: 100px 0;
+}
+.WhatWe_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.WhatWe_wrapper_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.WhatWe__card {
+  max-width: 391px;
+}
+
+// ----WhatUs-----
+
+.WhatUs {
+  display: flex;
+  flex-direction: column;
+  padding: 121px 0;
+  &__image {
+    width: 100%;
+  }
+}
+.WhatUs__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: -160px;
+  padding: 80px 90px;
+  background-color: #fff;
+}
+.WhatUs__content {
+  max-width: 472px;
+}
+.WhatUs__card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.WhatUs__card:not(:last-child) {
+  margin-bottom: 10px;
+}
+.WhatUs__wrapper_image {
+  position: relative;
+  .WhatUs__wrapper_absolute {
+    position: absolute;
+    left: -60px;
+    bottom: -60px;
+    background-color: #fff;
+    padding: 26px;
+  }
+}
+
+.Achievement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  margin-top: 112px;
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 38px 90px;
+    &_point {
+      width: 17px;
+      height: 17px;
+      background: var(--main-gradient);
+    }
+    &_text {
+      color: #1c1f35;
+      font-size: 20px;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid #d4d4d4;
+    }
+  }
+}
+
+//-----Work-----
+
+.work {
+  padding: 97px 0;
+  position: relative;
+  &__back {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 400px;
+    background: var(--main-gradient);
+    z-index: -1;
+  }
+}
+.work_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+.work__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+.work__card {
+  position: relative;
+  &_img {
+    z-index: -1;
+  }
+  &_content {
+    position: absolute;
+    left: 25px;
+    right: 0;
+    bottom: 20px;
+    z-index: 10;
+    text-align: start;
+  }
+}
+.work__title {
+  color: #fff;
+  font-size: 20px;
+}
+.work__text {
+  font-family: var(--second-font);
+  color: #ffb629;
+  font-size: 16px;
+}
+
+//-----chose-----
+
+.choose {
+  padding: 145px 0;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #091242;
+    z-index: -1;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f4;
+    z-index: -1;
+    background-image: url(/Pattern.png);
+    background-repeat: no-repeat;
+  }
+}
+.choose__container {
+  max-width: 1550px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.choose__image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &_content {
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: var(--main-gradient);
+  }
+}
+.choose__content {
+  max-width: 533px;
+}
+
+/* -----meet----- */
+
+.meet {
+  text-align: center;
+  padding: 95px 0;
+}
+.meet__wrap {
+  display: flex;
+  gap: 50px;
+}
+.meet__card {
+  position: relative;
+  &_social {
+    position: absolute;
+    top: 400px;
+    right: 0;
+    display: flex;
+    gap: 20px;
+    padding: 17px 20px;
+    background: var(--main-gradient);
+  }
+}
+.meet__content {
+  padding: 34px 0 20px 42px;
+  text-align: start;
+  background-color: #1c1f35;
+}
+
+/* ---Contact--- */
+
+.Contact {
+  padding: 143px 0;
+  background-color: var(--main-background);
+  &__content {
+    max-width: 353px;
+  }
+  &__wrap {
+    display: flex;
+    gap: 80px;
+  }
+}
+.contact__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.contact {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+  &__text {
+    color: #fff;
+    font-family: 'Krub', sans-serif;
+    font-style: 14px;
+  }
+}
+.title__dop {
+  color: #fff;
+}
+.Contact__form {
+  margin-bottom: 50px;
+  & > input {
+    width: 45%;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 20px;
+    border: 1px solid #4e5683;
+    &:not(:last-child) {
+      margin-right: 28px;
+      margin-bottom: 30px;
+    }
+  }
+  & > textarea {
+    color: #fff;
+    resize: none;
+    padding: 24px;
+    width: 90%;
+    min-height: 150px;
+    border: 1px solid #4e5683;
+  }
+  & > button {
+    margin-top: 30px;
+    padding: 19px 34px;
+    background: var(--main-gradient);
+  }
+}
+.Contact__img_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ----blog---- */
+
+.blog {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 0;
+  }
+  &__wrap {
+  }
+}
+.blog__card {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #d6d6d6;
+  padding: 30px 0;
+  &:last-child {
+    border-bottom: 1px solid #d6d6d6;
+  }
+  &_img {
+  }
+  &_date {
+  }
+  &_separate {
+    width: 1px;
+    background-color: #d6d6d6;
+  }
+  &_content {
+    max-width: 335px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &_list {
+    &_item {
+      list-style:disc;
+      margin-left: 20px;
+    }
+  }
+}

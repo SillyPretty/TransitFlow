@@ -1,0 +1,21 @@
+.error {
+  padding: 200px 10px 100px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.errorTitle {
+  font-size: 350px;
+  color: #ffb82b;
+  &::after {
+    content: '4';
+    color: #1c1f35;
+  }
+  &::before {
+    content: '4';
+    color: #1c1f35;
+  }
+}

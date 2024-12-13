@@ -1,11 +1,11 @@
 import { FC } from 'react'
 
-import Button from '../../button/Button'
+import Button from '../../ui/button/Button'
 
-import styles from './Footer.module.scss'
 import './../../App/index.scss'
+import styles from './Footer.module.scss'
 
-const Footer:FC = () => {
+const Footer: FC = () => {
   return (
     <footer>
       <div className={styles.wrapper}>
@@ -87,7 +87,6 @@ const Footer:FC = () => {
                   <img src='/Facebook.svg' alt='Facebook' />
                 </a>
               </div>
-              
             </div>
           </div>
         </div>

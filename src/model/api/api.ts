@@ -1,4 +1,9 @@
-import { IBlogData, ICommentsData, IFakeData, IOurTeamData } from "../interface/interface"
+import {
+  IBlogData,
+  ICommentsData,
+  IFakeData,
+  IOurTeamData
+} from '../interface/interface'
 
 export const FakeData: IFakeData[] = [
   {

@@ -1,7 +1,7 @@
 import { FC } from 'react'
-
 import { RouterProvider } from 'react-router-dom'
-import { router } from '../../model/route/route'
+
+import { router } from '../../model/routes/routes'
 
 import './index.scss'
 import './reset.scss'
